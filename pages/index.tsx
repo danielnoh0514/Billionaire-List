@@ -29,6 +29,7 @@ export default function Home() {
           {data?.slice(0, 50).map((billionaires) => (
             <div key={billionaires.id}>
               <Link
+                key={billionaires.id}
                 href={{
                   pathname: `/person/${billionaires.id}`,
                   query: {

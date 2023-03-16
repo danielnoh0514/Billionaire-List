@@ -64,7 +64,7 @@ export default function Person() {
           <span className={styles.assetTitle}>Financial Assets</span>
           <div className={styles.assetWrapper}>
             {data?.financialAssets.map((info) => (
-              <div className={styles.asset}>
+              <div key={info.companyName} className={styles.asset}>
                 <span>Company: {info.companyName}</span>
                 <span>Ticker: {info.ticker}</span>
                 <span>
